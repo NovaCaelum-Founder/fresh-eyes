@@ -1,0 +1,11 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor noise
+*.swp
+*.swo
+
+# Local scratch — reports/ IS committed (it's the record); packets are generated
+# in the target system's repo, but ignore any stray local ones just in case
+review-packet_*.md
