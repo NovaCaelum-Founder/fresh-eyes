@@ -71,4 +71,4 @@ A worked packet generator is in [`examples/generate-packet.sh`](examples/generat
 
 ---
 
-*Nova Caelum & Co. designs and implements AI systems and enterprise capabilities to solve complex business problems at scale.*
+*Nova Caelum & Co. designs and implements AI systems and enterprise capabilities to solve the most complex business problems and operational deficits.*
