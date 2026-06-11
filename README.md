@@ -24,7 +24,7 @@ generates a review packet   ───►   verifies the packet is complete
                             ◄───   you arbitrate; your own agents implement
 ```
 
-The packet is the entire interface. The consultant evaluates what it is handed, against the rubric it is handed, and nothing more.
+The packet is the entire interface. The consultant evaluates what it is handed, against the rubric it is handed, and nothing more by design.
 
 ## The packet protocol
 
