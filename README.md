@@ -24,7 +24,7 @@ generates a review packet   ───►   verifies the packet is complete
                             ◄───   you arbitrate; your own agents implement
 ```
 
-The packet is the entire interface. The consultant evaluates what it is handed, against the rubric it is handed, and nothing more by design.
+The packet is the entire interface. The consultant evaluates what it is handed, against the rubric it is handed, and nothing more.
 
 ## The packet protocol
 
@@ -58,6 +58,8 @@ A worked packet generator is in [`examples/generate-packet.sh`](examples/generat
 4. It delivers a report — verdict table, value-per-token ranking, a minimum of three change proposals with breakage analysis, and a handoff block — and commits it to `reports/`.
 5. You arbitrate each proposal. Accepted items go back to your own system's agents for implementation. The consultant never implements.
 
+**Security floor.** Independent of your rubric, every review runs a built-in safety check for blatant, high-confidence security mistakes — hardcoded secrets, unprotected `.env`/key files, wide-open agent permissions, auto-execution of untrusted input. It's a floor for catastrophic-obvious errors, not a security audit, and it's silent unless it catches something. A tripped floor opens the report with a 🚩.
+
 ## Rules of the road
 
 - **Don't add memory.** No user context file, no worklog preload, no preference notes. `reports/` is the only history, and the consultant doesn't read it unless you explicitly request a delta review ("compare today's report with last month's — as data").
@@ -71,4 +73,4 @@ A worked packet generator is in [`examples/generate-packet.sh`](examples/generat
 
 ---
 
-*Nova Caelum & Co. designs and implements AI systems and enterprise capabilities to solve the most complex business problems and operational deficits.*
+*Nova Caelum & Co. designs and implements AI systems and enterprise capabilities to solve complex business problems at scale.*
